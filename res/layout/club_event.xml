@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.epoxy.EpoxyRecyclerView android:orientation="vertical" android:id="@id/club_event" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="204.0dip" android:layout_marginTop="2.0dip" android:layout_marginStart="@dimen/event_horizontal_padding_adaptation" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ImageView android:layout_gravity="end" android:layout_width="@dimen/common_end_shadow_width" android:layout_height="fill_parent" android:src="@drawable/end_shadow" />
+</FrameLayout>

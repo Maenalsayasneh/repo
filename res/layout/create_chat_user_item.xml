@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.clubhouse.android.shared.ui.AvatarView android:id="@id/avatar" android:layout_width="@dimen/create_chat_selected_avatar_size" android:layout_height="@dimen/create_chat_selected_avatar_size" android:layout_marginEnd="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/remove" android:layout_width="24.0dip" android:layout_height="24.0dip" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/ic_remove_button" android:translationX="12.0dip" app:layout_constraintEnd_toEndOf="@id/avatar" app:layout_constraintTop_toTopOf="@id/avatar" />
+    <TextView android:ellipsize="end" android:id="@id/name" android:paddingTop="@dimen/avatar_below_username_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintEnd_toEndOf="@id/avatar" app:layout_constraintStart_toStartOf="@id/avatar" app:layout_constraintTop_toBottomOf="@id/avatar" style="@style/TextStyle.Bold" />
+</merge>

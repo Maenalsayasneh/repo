@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_list_horizontal_margin" android:layout_marginTop="@dimen/hallway_list_vertical_margin" android:layout_marginRight="@dimen/common_list_horizontal_margin" android:layout_marginBottom="@dimen/hallway_list_vertical_margin" android:layout_marginHorizontal="@dimen/common_list_horizontal_margin" android:layout_marginVertical="@dimen/hallway_list_vertical_margin" app:cardCornerRadius="@dimen/common_button_corner_radius" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/common_touchable_padding" android:paddingBottom="@dimen/common_touchable_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/common_touchable_padding">
+        <TextView android:textSize="18.0sp" android:textColor="@color/clubhouse_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_prompt_title" android:drawablePadding="@dimen/common_club_house_drawable_padding" app:drawableStartCompat="@drawable/ic_invite_star" style="@style/TextStyle.Bold" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/clubhouse_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/invite_prompt_text" style="@style/TextStyle.Medium" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

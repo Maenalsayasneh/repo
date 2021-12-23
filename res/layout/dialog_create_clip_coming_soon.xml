@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/clubhouse_eggshell" android:paddingLeft="15.0dip" android:paddingTop="30.0dip" android:paddingRight="15.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:srcCompat="@drawable/ic_create_clip_illustration" />
+    <TextView android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/create_clip_coming_soon_title" style="@style/TextStyle.Bold.SubHeading" />
+    <TextView android:gravity="center" android:id="@id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/create_clip_coming_soon_body" style="@style/TextStyle.Regular.Body" />
+    <TextView android:gravity="center" android:id="@id/learn_more_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/create_clip_coming_soon_learn_more_link" style="@style/TextStyle.Regular.Body" />
+    <Button android:textColor="@color/clubhouse_dark_gray" android:id="@id/primary_button" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="25.0dip" android:fontFamily="@font/nunito_regular" android:backgroundTint="@color/clubhouse_eggshell_shade" style="@style/Clubhouse.Button.Rounded.Medium.Gray" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" style="@style/ClubhouseNavToolbar">
+        <ImageView android:id="@id/back" style="@style/ClubhouseNavBackIcon" />
+        <TextView android:id="@id/toolbar_title" android:text="@string/recent_payments" style="@style/ClubhouseNavTitle" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.airbnb.epoxy.EpoxyRecyclerView android:id="@id/recent_payments" android:padding="@dimen/common_row_horizontal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

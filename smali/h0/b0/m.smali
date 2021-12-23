@@ -1,0 +1,43 @@
+.class public Lh0/b0/m;
+.super Ljava/lang/Object;
+.source "TransitionListenerAdapter.java"
+
+# interfaces
+.implements Lh0/b0/j$d;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lh0/b0/j;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public b(Lh0/b0/j;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public d(Lh0/b0/j;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public e(Lh0/b0/j;)V
+    .locals 0
+
+    return-void
+.end method

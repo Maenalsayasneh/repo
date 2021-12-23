@@ -1,0 +1,54 @@
+.class public final Lcom/airbnb/epoxy/EpoxyRecyclerView$initViewPool$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "EpoxyRecyclerView.kt"
+
+# interfaces
+.implements Lm0/n/a/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lm0/n/a/a<",
+        "Landroidx/recyclerview/widget/RecyclerView$t;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic c:Lcom/airbnb/epoxy/EpoxyRecyclerView;
+
+
+# direct methods
+.method public constructor <init>(Lcom/airbnb/epoxy/EpoxyRecyclerView;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/airbnb/epoxy/EpoxyRecyclerView$initViewPool$1;->c:Lcom/airbnb/epoxy/EpoxyRecyclerView;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/airbnb/epoxy/EpoxyRecyclerView$initViewPool$1;->c:Lcom/airbnb/epoxy/EpoxyRecyclerView;
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    new-instance v0, Li0/b/a/m0;
+
+    invoke-direct {v0}, Li0/b/a/m0;-><init>()V
+
+    return-object v0
+.end method

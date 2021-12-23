@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?android:windowBackground" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ClubhouseNavToolbar">
+        <TextView android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_chat_member" style="@style/ClubhouseNavTitle" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/close" android:src="@drawable/ic_close" android:contentDescription="@string/cd_close" style="@style/ClubhouseNavIcon" />
+    </androidx.appcompat.widget.Toolbar>
+    <EditText android:id="@id/search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_member_gutter" android:layout_marginTop="@dimen/common_touchable_padding" android:layout_marginRight="@dimen/chat_member_gutter" android:layout_marginBottom="@dimen/common_touchable_padding" android:hint="@string/add_chat_member_search_hint" android:layout_marginHorizontal="@dimen/chat_member_gutter" android:layout_marginVertical="@dimen/common_touchable_padding" android:importantForAutofill="no" app:layout_constraintBottom_toTopOf="@id/results" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" style="@style/Clubhouse.SearchField.Dark" />
+    <com.airbnb.epoxy.EpoxyRecyclerView android:id="@id/results" android:paddingLeft="@dimen/chat_member_gutter" android:paddingTop="8.0dip" android:paddingRight="@dimen/chat_member_gutter" android:paddingBottom="@dimen/common_bottom_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingHorizontal="@dimen/chat_member_gutter" app:itemSpacing="@dimen/create_chat_item_spacing" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/search" />
+    <FrameLayout android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

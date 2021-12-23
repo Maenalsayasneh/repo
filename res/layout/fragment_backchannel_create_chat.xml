@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:elevation="1.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ClubhouseNavToolbar">
+        <ImageView android:id="@id/back" style="@style/ClubhouseNavBackIcon" />
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_message" style="@style/ClubhouseNavTitle" />
+    </androidx.appcompat.widget.Toolbar>
+    <EditText android:id="@id/search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/create_chat_gutter" android:layout_marginTop="@dimen/participants_vertical_padding" android:layout_marginRight="@dimen/create_chat_gutter" android:layout_marginBottom="@dimen/participants_vertical_padding" android:hint="@string/create_chat_hint" android:inputType="textPersonName|textCapSentences" android:layout_marginHorizontal="@dimen/create_chat_gutter" android:layout_marginVertical="@dimen/participants_vertical_padding" android:importantForAutofill="no" app:layout_constraintBottom_toTopOf="@id/results" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" style="@style/Clubhouse.SearchField.White">
+        <requestFocus />
+    </EditText>
+    <com.airbnb.epoxy.EpoxyRecyclerView android:id="@id/results" android:paddingLeft="@dimen/create_chat_gutter" android:paddingTop="8.0dip" android:paddingRight="@dimen/create_chat_gutter" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingHorizontal="@dimen/create_chat_gutter" app:itemSpacing="@dimen/create_chat_item_spacing" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/search" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/ic_right_arrow" android:contentDescription="@string/create" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:tint="@color/white" />
+    <ProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" app:layout_constraintEnd_toEndOf="@id/results" app:layout_constraintStart_toStartOf="@id/results" app:layout_constraintTop_toTopOf="@id/results" />
+    <FrameLayout android:id="@id/full_screen_loading" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="20.0dip">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
